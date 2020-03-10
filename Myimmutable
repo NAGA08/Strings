@@ -2,7 +2,6 @@ package Strings;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
@@ -114,7 +113,16 @@ public class Myimmutable {
 
 			System.out.println("Enter Employee Name:");
 			e.setEmpName(new StringBuilder(br.readLine()));
+			
+			
+			//accept salary ,salary type here
+			e.setSalaryType(money);
+			
+			System.out.println("Enter salary in "+money);
+			e.setSalary(Float.parseFloat(br.readLine()));
 
+			
+			//add employee type object list collections
 			c1.elist.add(e);
 
 			System.out.println("Wish to add more?(y/n)");
